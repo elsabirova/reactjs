@@ -1,5 +1,3 @@
-"use strict";
-
 import './message.css';
 
 export default class Message {
