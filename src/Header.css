@@ -1,0 +1,11 @@
+.header {
+    background-color: #d7f7ff;
+}
+
+.header__small {
+    height: 100px;
+}
+
+.header__big {
+    height: 400px;
+}
