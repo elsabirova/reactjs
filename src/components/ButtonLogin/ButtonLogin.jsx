@@ -1,5 +1,4 @@
-import React, {Component} from 'react';
-
+import React, {Component, Fragment} from 'react';
 import {Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Label, Input, FormText} from 'reactstrap';
 
 export default class ButtonLogin extends Component {
@@ -20,7 +19,7 @@ export default class ButtonLogin extends Component {
     
     render() {
         return (
-            <div>
+            <Fragment>
                 <Button color="info" onClick={this.toggle}>{this.props.buttonLabel}</Button>
                 <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
                     <ModalHeader toggle={this.toggle}>Login</ModalHeader>
@@ -38,7 +37,7 @@ export default class ButtonLogin extends Component {
                         </Form>
                     </ModalBody>
                 </Modal>
-            </div>
+            </Fragment>
         );
     }
 }
