@@ -1,20 +1,22 @@
-import './Header.css';
+import './Header.sass';
 
 import React, {Component} from 'react';
 import classNames from 'classnames';
-
-import Menu from './Menu.jsx';
-import ButtonLogin from "./ButtonLogin.jsx";
-
 import {Navbar, NavbarBrand} from 'reactstrap';
+
+import Menu from 'components/Menu';
+import ButtonLogin from "components/ButtonLogin";
 
 const menuItems = [
     {
-        link: 'https://geekbrains.ru', title: 'Geekbrains'
+        link: 'home', title: 'Home'
     },
     {
-        link: 'https://google.com', title: 'Google'
+        link: 'about', title: 'About'
     },
+    {
+        link: 'contact', title: 'Contacts'
+    }
 ];
 
 export default class Header extends Component {
@@ -29,10 +31,9 @@ export default class Header extends Component {
         );
         return (
             <div className={className}>
-                <Navbar light expand="md">
+                <Navbar light expand="md" className="header-content">
                     <NavbarBrand href="/">Blog</NavbarBrand>
-                    <Menu items={menuItems}/>
-                    <ButtonLogin buttonLabel="Login"/>
+                    <Menu items={menuItems}/><ButtonLogin buttonLabel="Login"/>
                 </Navbar>
             </div>
         )
