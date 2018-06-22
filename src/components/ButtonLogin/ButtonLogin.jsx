@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from 'react';
-import {Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Label, Input, FormText} from 'reactstrap';
+import {Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Label, Input} from 'reactstrap';
 
 export default class ButtonLogin extends Component {
     constructor(props) {

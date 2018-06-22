@@ -6,6 +6,9 @@ import ReactDom from 'react-dom';
 
 import Header from 'components/Header';
 import MainPage from "components/MainPage";
+import Blog from "containers/BlogContainer";
+import Comments from 'containers/CommentsContainer';
+import UserList from 'containers/UserListContainer';
 import Footer from "components/Footer";
 
 class Layout extends Component {
@@ -14,7 +17,10 @@ class Layout extends Component {
             <div className="wrapper">
                 <Header size="small"/>
                 <div className="content">
-                    <MainPage/>
+                    <Blog/>
+                    {/*<MainPage/>
+                    <Comments/>
+                    <UserList/>*/}
                 </div>
                 <Footer/>
             </div>

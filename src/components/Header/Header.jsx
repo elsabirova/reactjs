@@ -6,16 +6,28 @@ import {Navbar, NavbarBrand} from 'reactstrap';
 
 import Menu from 'components/Menu';
 import ButtonLogin from "components/ButtonLogin";
+import Comments from "components/Comments/Comments";
 
 const menuItems = [
     {
-        link: 'home', title: 'Home'
+        id: 1,
+        link: 'MainPage',
+        title: 'Home'
     },
     {
-        link: 'about', title: 'About'
+        id: 2,
+        link: 'Blog',
+        title: 'Blog'
     },
     {
-        link: 'contact', title: 'Contacts'
+        id: 3,
+        link: 'Comments',
+        title: 'Comments'
+    },
+    {
+        id: 4,
+        link: 'UserList',
+        title: 'Users'
     }
 ];
 
