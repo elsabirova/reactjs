@@ -5,8 +5,8 @@ import classNames from 'classnames';
 import {Navbar, NavbarBrand} from 'reactstrap';
 
 import Menu from 'components/Menu';
-import ButtonLogin from "components/ButtonLogin";
-import Comments from "components/Comments/Comments";
+import ButtonLogin from 'components/ButtonLogin';
+import Comments from 'components/Comments/Comments';
 
 const menuItems = [
     {

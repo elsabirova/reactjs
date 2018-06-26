@@ -15,7 +15,7 @@ import {
     PaginationLink
 } from 'reactstrap';
 
-import Author from "containers/AuthorContainer";
+import Author from 'containers/AuthorContainer';
 
 export default class Blog extends PureComponent {
     render() {

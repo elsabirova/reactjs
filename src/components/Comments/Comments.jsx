@@ -12,11 +12,9 @@ export default class Comments extends PureComponent {
                 <h1>Comments</h1>
                 
                 {comments.map(comment =>
-                    <Fragment>
-                        <div className="comments-text" key={comment.id}>
-                            {comment.body}
-                        </div>
-                    </Fragment>
+                    <div className="comments-text" key={comment.id}>
+                        {comment.body}
+                    </div>
                 )}
                 
                 <Button onClick={onLoadMore} color="info">Load more</Button>
