@@ -1,8 +1,8 @@
 import './Header.sass';
 
 import React, {Component} from 'react';
-import classNames from 'classnames';
 import {Navbar, NavbarBrand} from 'reactstrap';
+import classNames from 'classnames';
 
 import Menu from 'components/Menu';
 import ButtonLogin from 'components/ButtonLogin';
@@ -11,22 +11,22 @@ import Comments from 'components/Comments/Comments';
 const menuItems = [
     {
         id: 1,
-        link: 'MainPage',
+        link: '/',
         title: 'Home'
     },
     {
         id: 2,
-        link: 'Blog',
+        link: '/articles',
         title: 'Blog'
     },
     {
         id: 3,
-        link: 'Comments',
+        link: '/comments',
         title: 'Comments'
     },
     {
         id: 4,
-        link: 'UserList',
+        link: '/users',
         title: 'Users'
     }
 ];

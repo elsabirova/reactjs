@@ -1,26 +1,26 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './main.sass';
 
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import ReactDom from 'react-dom';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+
+import routes from './routes';
 
 import Header from 'components/Header';
-import MainPage from "components/MainPage";
-import Blog from "containers/BlogContainer";
-import Comments from 'containers/CommentsContainer';
-import UserList from 'containers/UserListContainer';
-import Footer from "components/Footer";
+import Footer from 'components/Footer';
 
-class Layout extends Component {
+class Layout extends PureComponent {
     render() {
         return (
             <div className="wrapper">
                 <Header size="small"/>
                 <div className="content">
-                    <Blog/>
-                    {/*<MainPage/>
-                    <Comments/>
-                    <UserList/>*/}
+                    <BrowserRouter>
+                        <Switch>
+                            {routes.map((route) => <Route {...route}/>)}
+                        </Switch>
+                    </BrowserRouter>
                 </div>
                 <Footer/>
             </div>
