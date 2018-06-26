@@ -1,6 +1,6 @@
 import React, {PureComponent, Fragment} from 'react';
 
-import Author from "components/Author";
+import Author from 'components/Author';
 
 export default class AuthorContainer extends PureComponent {
     constructor(props) {
