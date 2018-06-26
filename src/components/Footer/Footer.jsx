@@ -6,10 +6,14 @@ import Menu from 'components/Menu';
 
 const menuItems = [
     {
-        link: 'https://geekbrains.ru', title: 'Geekbrains'
+        id: 1,
+        link: 'https://geekbrains.ru',
+        title: 'Geekbrains'
     },
     {
-        link: 'https://google.com', title: 'Google'
+        id: 2,
+        link: 'https://google.com',
+        title: 'Google'
     },
 ];
 
